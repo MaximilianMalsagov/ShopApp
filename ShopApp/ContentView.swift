@@ -8,14 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var cardManager = CardManager()
+    
+    var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(productList, id: \.id) { product in
+                        ProductCard(product: product)
+                            .environmentObject(cardManager)
+                        
+                    }
+                }
+                .padding()
+            }
+            .navigationTitle(Text("Sweater Shop"))
+            .toolbar {
+                NavigationLink {
+                    CardView()
+                        .environmentObject(cardManager)
+
+                }label: {
+                    CardButton(numberOfProducts: cardManager.products.count)
+                }
+            }
         }
-        .padding()
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
