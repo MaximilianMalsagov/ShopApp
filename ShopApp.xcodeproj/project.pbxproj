@@ -11,6 +11,8 @@
 		D48350B129AC9EA30070C110 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48350B029AC9EA30070C110 /* ContentView.swift */; };
 		D48350B329AC9EA40070C110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48350B229AC9EA40070C110 /* Assets.xcassets */; };
 		D48350B629AC9EA40070C110 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48350B529AC9EA40070C110 /* Preview Assets.xcassets */; };
+		D48350BE29ACA0650070C110 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48350BD29ACA0650070C110 /* Product.swift */; };
+		D48350C129ACA1D00070C110 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48350C029ACA1D00070C110 /* ProductCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		D48350B029AC9EA30070C110 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D48350B229AC9EA40070C110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D48350B529AC9EA40070C110 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D48350BD29ACA0650070C110 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D48350C029ACA1D00070C110 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		D48350AD29AC9EA30070C110 /* ShopApp */ = {
 			isa = PBXGroup;
 			children = (
-				D48350AE29AC9EA30070C110 /* ShopAppApp.swift */,
 				D48350B029AC9EA30070C110 /* ContentView.swift */,
+				D48350AE29AC9EA30070C110 /* ShopAppApp.swift */,
+				D48350BF29ACA1BE0070C110 /* Components */,
+				D48350BC29ACA0580070C110 /* Models */,
 				D48350B229AC9EA40070C110 /* Assets.xcassets */,
 				D48350B429AC9EA40070C110 /* Preview Content */,
 			);
@@ -65,6 +71,22 @@
 				D48350B529AC9EA40070C110 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D48350BC29ACA0580070C110 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D48350BD29ACA0650070C110 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D48350BF29ACA1BE0070C110 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D48350C029ACA1D00070C110 /* ProductCard.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +161,8 @@
 			files = (
 				D48350B129AC9EA30070C110 /* ContentView.swift in Sources */,
 				D48350AF29AC9EA30070C110 /* ShopAppApp.swift in Sources */,
+				D48350BE29ACA0650070C110 /* Product.swift in Sources */,
+				D48350C129ACA1D00070C110 /* ProductCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
